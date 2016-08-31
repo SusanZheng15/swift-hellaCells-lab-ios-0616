@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class HellaDetailViewController: UIViewController
+{
+    
+    var labelString = ""
+    @IBOutlet weak var bigNumber: UILabel!
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        bigNumber.text = labelString
     }
 
     override func didReceiveMemoryWarning() {
